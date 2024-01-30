@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:sodesh_smart_healthcare/src/features/authentication/screens/apoint_details.dart';
 
-import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/doctors_list.dart';
-import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/doctors_video.dart';
-import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/heath_card.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/widget/doctors_list.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/widget/doctors_video.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/widget/heath_card.dart';
 import 'package:sodesh_smart_healthcare/src/common_widgets/roundButton.dart';
-import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/see_all_widget.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/widget/see_all_widget.dart';
 
 import 'package:sodesh_smart_healthcare/src/contstants/app_color.dart';
-import 'package:sodesh_smart_healthcare/src/contstants/images.dart';
 import 'package:sodesh_smart_healthcare/src/data/doctors_data_list.dart';
 
 class Home extends StatefulWidget {
@@ -61,7 +60,7 @@ class _HomeState extends State<Home> {
                         )),
                         Column(
                           children: [
-                            Text(
+                            const Text(
                               "Current Location",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
@@ -75,7 +74,7 @@ class _HomeState extends State<Home> {
                                   width: width * 0.04,
                                 ),
                                 SizedBox(width: width * 0.02),
-                                Text(
+                                const Text(
                                   "Sylhet, BD",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 )

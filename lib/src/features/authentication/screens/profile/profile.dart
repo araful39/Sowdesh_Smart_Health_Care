@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sodesh_smart_healthcare/src/contstants/app_color.dart';
 
-import 'manage_appointment.dart';
+import 'widget/managecard.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -49,7 +49,7 @@ class Profile extends StatelessWidget {
                 height: height * 0.04,
               ),
 
-              ManageAppointment(name: 'Manage Appointment', icon: const Icon(
+              ManageCard(name: 'Manage Appointment', icon: const Icon(
                 Icons.calendar_month_outlined,
                 color: Colors.white,
                 size: 15,
@@ -57,7 +57,7 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: height * 0.03,
               ),
-              ManageAppointment(name: 'E-prescription', icon: const Icon(
+              ManageCard(name: 'E-prescription', icon: const Icon(
                 Icons.calendar_view_day_rounded,
                 color: Colors.white,
                 size: 15,
@@ -65,7 +65,7 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: height * 0.03,
               ),
-              ManageAppointment(name: 'Profile setting', icon: const Icon(
+              ManageCard(name: 'Profile setting', icon: const Icon(
                 Icons.settings,
                 color: Colors.white,
                 size: 15,
@@ -73,7 +73,7 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: height * 0.03,
               ),
-              ManageAppointment(name: 'Histroy', icon: const Icon(
+              ManageCard(name: 'Histroy', icon: const Icon(
                 Icons.history,
                 color: Colors.white,
                 size: 15,

@@ -2,13 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sodesh_smart_healthcare/src/contstants/app_color.dart';
 
-class ManageAppointment extends StatelessWidget {
-  ManageAppointment({super.key, required this.name, required this.icon});
+class CardWidgetNotice extends StatelessWidget {
+  const CardWidgetNotice({super.key,required this.name, required this.icon, this.color});
 final String name;
 final Icon icon;
+final Color? color;
   @override
   Widget build(BuildContext context) {
-    return   SizedBox(
+    return SizedBox(
       height: 100,
       width: double.infinity,
       child: Center(
@@ -25,7 +26,7 @@ final Icon icon;
                   children: [
                     CircleAvatar(
                       maxRadius: 15,
-                      backgroundColor: buttonColor,
+                      backgroundColor: color??buttonColor,
                       child: icon,
                     ),
                     SizedBox(

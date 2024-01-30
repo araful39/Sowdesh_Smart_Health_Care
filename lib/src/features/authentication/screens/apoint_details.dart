@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sodesh_smart_healthcare/src/common_widgets/roundButton.dart';
+import 'package:sodesh_smart_healthcare/src/common_widgets/text_form_field.dart';
 import 'package:sodesh_smart_healthcare/src/contstants/icons.dart';
 import 'package:sodesh_smart_healthcare/src/contstants/images.dart';
 
@@ -199,21 +200,12 @@ class _ApointDetailsState extends State<ApointDetails> {
                           SizedBox(
                             height: height * 0.01,
                           ),
-                          TextFormField(
-                            decoration: InputDecoration(
-                                hintText: "Enter your name",
-                                border: OutlineInputBorder(),
-                                focusedBorder: OutlineInputBorder()),
-                          ),
+                          TextFormCustom(hintName: "Enter your name",),
                           SizedBox(
                             height: height * 0.01,
                           ),
-                          TextFormField(
-                            decoration: InputDecoration(
-                                hintText: "Enter your mobile number",
-                                border: OutlineInputBorder(),
-                                focusedBorder: OutlineInputBorder()),
-                          ),
+                          TextFormCustom(hintName: "Enter your mobile number",),
+
                           SizedBox(
                             height: height * 0.01,
                           ),
@@ -289,13 +281,7 @@ class _ApointDetailsState extends State<ApointDetails> {
                           SizedBox(
                             height: height * 0.01,
                           ),
-                          TextFormField(
-                            maxLines: 10,
-                            decoration: InputDecoration(
-                                hintText: "Write your problem",
-                                border: OutlineInputBorder(),
-                                focusedBorder: OutlineInputBorder()),
-                          ),
+                          TextFormCustom(hintName:"Write your problem",maxLine: 10,),
                           Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
