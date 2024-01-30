@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sodesh_smart_healthcare/src/common_widgets/apoint_details.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/apoint_details.dart';
 
-import 'package:sodesh_smart_healthcare/src/common_widgets/doctors_list.dart';
-import 'package:sodesh_smart_healthcare/src/common_widgets/doctors_video.dart';
-import 'package:sodesh_smart_healthcare/src/common_widgets/heath_card.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/doctors_list.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/doctors_video.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/heath_card.dart';
 import 'package:sodesh_smart_healthcare/src/common_widgets/roundButton.dart';
-import 'package:sodesh_smart_healthcare/src/common_widgets/see_all_widget.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/see_all_widget.dart';
 
 import 'package:sodesh_smart_healthcare/src/contstants/app_color.dart';
 import 'package:sodesh_smart_healthcare/src/contstants/images.dart';
@@ -136,6 +136,7 @@ class _HomeState extends State<Home> {
                     itemCount: _doctorsData.doctorList.length,
                     itemBuilder: (context, index) {
                       return DoctorsList(
+
                         name: _doctorsData.doctorList[index]["name"],
                         profession: _doctorsData.doctorList[index]["profession"],
                         image: _doctorsData.doctorList[index]["image"],

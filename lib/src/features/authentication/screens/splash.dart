@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home.dart';
+import 'package:sodesh_smart_healthcare/src/features/authentication/screens/home/home.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
