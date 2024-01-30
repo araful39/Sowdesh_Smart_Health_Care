@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sodesh_smart_healthcare/src/common_widgets/apoint_details.dart';
 import 'package:sodesh_smart_healthcare/src/features/authentication/screens/splash/splash.dart';
 import 'package:sodesh_smart_healthcare/src/utils/theme/theme.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: RAppTheme.lightTheme,
       darkTheme: RAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: Splash(),
+      home: ApointDetails(),
     );
   }
 }
