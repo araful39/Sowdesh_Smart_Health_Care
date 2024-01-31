@@ -281,6 +281,11 @@ class _ApointDetailsState extends State<ApointDetails> {
                           SizedBox(
                             height: height * 0.01,
                           ),
+                          TextFormCustom(hintName: "Enter your age",),
+
+                          SizedBox(
+                            height: height * 0.01,
+                          ),
                           TextFormCustom(hintName:"Write your problem",maxLine: 10,),
                           Spacer(),
                           Row(
